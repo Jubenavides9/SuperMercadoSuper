@@ -1,0 +1,53 @@
+.contenedor {
+   
+    display: grid;
+    gap: 0px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4,aut);
+}
+
+.contenedor .header {
+    
+    display: grid;
+    grid-gap:5px;
+    grid-template-columns: 190px 500px repeat(3, 1fr);
+    
+}
+
+.contenedor .contenido {    
+    display: grid;
+    gap: 10px;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 330px ;
+}
+
+.foto1 {
+    margin: auto;   
+}
+
+.informacion {
+    align-items: start;
+    display: grid;
+    gap:5px;
+
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 100px 50px;
+
+    grid-template-areas: "datos datos"
+                            "cantidad   carrito";
+
+}
+
+.datos { grid-area: datos; }
+
+.cantidad {grid-area: cantidad; }
+
+.carrito { grid-area: carrito; }
+
+.contenedor .footer .redes {
+display: grid;
+grid-gap:5px;
+grid-template-columns: repeat(3, 50px);
+
+}
